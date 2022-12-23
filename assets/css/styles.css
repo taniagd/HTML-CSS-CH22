@@ -1,0 +1,43 @@
+/* De esta manera se hace un comentario en CSS */ 
+
+/*Selector universal (*). Selecciona todos los elementos.
+En el caso siguiente se aplica un color de fondo para todo el documento
+
+*{
+    background-color: lightskyblue;
+} 
+
+*/
+
+ /* Selectores de tipo
+ Selecciona todos los elementos con ese nombre*/
+
+h1 {
+    color:green;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color:blue;
+    font-family: 'Sedgwick Ave', cursive;/* Esta línea indica una fuente personalizada*/
+}
+
+/* Selectores de clase
+Selcciona elementos de clase específica asignada
+Para usar estos selectores, se debe comenzar con punto (.), seguido del nombre de la clase
+*/
+
+.tipos-tamales{ /* Esta clase se aplicó en diferentes elementos encontrados en las líneas 56,60 7 81 del index.html*/
+    background-color: pink;
+}
+
+/*Selectores de id
+Permite seleccionar un elemento con un id específico. NO se comparte con ningún otro elemento
+Para usar este selector se inicia con numeral (#), seguido del nombre del id. 
+*/
+
+#sabores{ /* Este id se aplicó al elemento <ol> en la línea 83 del index.html*/
+    color:red;
+}
+
