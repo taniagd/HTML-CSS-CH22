@@ -10,14 +10,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--Etiqueta meta útil para el responsive-->
     <title>Los 3 tamalitos</title>
+    <!--Título mostrado en la pestaña del navegador-->
     <link rel="icon" type="image/x-icon" href="assets/img/tamalito.png" />
     <!--Agregamos un icono para que se visualice en la pestaña del navegador-->
     <!--En href tenemos la ruta que nos indica donde está almacenada nuestra imagen, en este caso, en una carpeta assets, dentro de otra carpeta llamada img y la imagen se llama tamalito.png-->
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet"> 
+    <!-- Fragmento tomado de Google Fonts para personalizar la fuente utilizada-->
+    <link rel="stylesheet" href="assets/css/styles.css"> <!--CSS Externo-->
+
+    
+        <!--<style>
+        h1{
+            color:blueviolet;
+        }
+
+        h2{
+            color:aquamarine;
+        }
+    </style> -->
+    <!-- CSS interno (no es práctica recomendable)-->
+</head>
 
   <body>
         <h1>Tamales "Los tres tamalitos"</h1> <!--Etiquetas de encabezados. Existen de h1 a h6, e indican mayor a menor importancia-->
         <h2>Historia</h2>
+        <h2>Historia2</h2>
+        <h2>Historia3</h2>
+
         <p> <!--Párrafo-->
       Un día como hoy, pero de hace 25 años, el señor Adan Gayosso decidió poner
       un puesto de tamales para tener recursos extras para mantener a su
@@ -34,8 +53,12 @@
 
         <h3>Sabores de tamales</h3>
 
-        <p>Tamales <strong>normales</strong></p>
-        <ul> <!--Lista desordenada-->
+        <p class="tipos-tamales">Tamales <strong>normales</strong></p>
+        <!--Agregamos el atributo class con valor "tipos-tamales"
+        Las clases se pueden compartir con varios elementos-->
+
+        <ul class="tipos-tamales"> <!--Lista desordenada-->
+            <!--Se agrega clase compartida con otro elemento-->
             <li>Verdes</li> <!--Elemento de lista-->
             <li>Rajas</li>
             <li>Mole</li>
@@ -55,8 +78,9 @@
                         </ul>
                 </ul>
         </ul>
-        <p>Tamales oaxaqueños</p>
-        <ol> <!--Lista ordenada-->
+        <p class="tipos-tamales">Tamales oaxaqueños</p>
+        <!--Se agregó clase compartida con otros elementos-->
+        <ol id="sabores"> <!--Lista ordenada-->
             <li>Verdes</li> <!--Elemento de lista-->
             <li>Rojos</li>
             <li>Mole</li>
@@ -89,15 +113,23 @@
         <!--Em hace que el texto se visualice itálicas-->
         <h5>Eventos</h5>
             <p> Para pedidos y cotizaciones dírigete a este enlace <a href="https://www.freecodecamp.org/"> aquí </a></p>
+            <!--Colocamos un enlace externo con etiqueta anchor (ancla)-->
 
         <h6>Datos adicionales</h6>
-        <img src="assets/img/plato.jpg" width="200" height="200" alt="Plato extendido con 4 tamales de hoja de maíz">
+        <img src="assets/img/platotamales.jpg" width="200" height="200" alt="Plato extendido con 4 tamales de hoja de maíz">
+        
+        <!--Se agregó la etique img, que es de autocierre. Esta etiqueta se acompaña de dos atributos: src y alt. 
+        Src inidica la ubicación de la imagen que se mostrará, en este caso, se encuentra dentro de una de nuestras carpetas.
+        Alt es un atributo donde se añade una descipción de la imagen que colocamos, pues en caso de que la imagen no pueda ser mostrada, en su lugar estará este texto descriptivo. Es importante para el posicionamiento SEO y la accesibilidad para usuarios que utilizan lectores de pantalla-->
+
         <img src="https://www.elimparcial.com/export/sites/elimparcial/img/2021/04/13/solucion.jpg_344325628.jpg" width="300" height="200" alt="Ilustración de gatitos comprando tamales en un puesto de la calle, hay un microbus y un gatito se cayó y derramó su atole.">
+        <!--Agregamos otra etiqueta de imagen, pero esta vez la ubicación del recurso es un enlace.-->
         
         <div>
            <p>Ofertones</p>
            <p> Tamales al 3x2 los jueves</p>
         </div>
+        <!--Creamos un div, para definir una sección específica-->
 
   </body>
 </html>
