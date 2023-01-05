@@ -41,3 +41,22 @@ Para usar este selector se inicia con numeral (#), seguido del nombre del id.
     color:red;
 }
 
+table {
+    text-align: center;
+    border:3px solid black;
+    /*border-right: 5px solid red;
+    border-left: 5px dotted blue;
+    border-top: 7px double green;
+    border-bottom: hidden;*/;
+}
+
+th, td{
+    border:1px solid blue;
+    padding: 10px;
+}
+
+.tabla-dos{
+    text-align: center;
+    border: 2px dashed green;
+}
+

@@ -129,7 +129,98 @@
            <p>Ofertones</p>
            <p> Tamales al 3x2 los jueves</p>
         </div>
-        <!--Creamos un div, para definir una sección específica-->
+        <!--Creamos un div, para definir una sección específica quecontendrá las tablas-->
 
+        <div>
+            <h2>Conoce nuestros precios y promociones</h2>
+            <table> <!--Usamos la etiqueta table para comenzar a crear nuestra tabla-->
+              <thead> <!--Encabezado de la tabla-->
+                <tr> <!--Table row-fila-->
+                    <th> Tamales solos</th> <!--table header:Celdas de encabezado de la tabla-->
+                    <th> Tortas </th>
+                    <th> Tamales zarzamora</th>
+                    <th> Tamales oaxaqueños especiales </th>
+                    <th> Atole chico </th>
+                    <th> Atole mediano</th>
+                    <th> Atole de litro</th>
+                </tr>
+              </thead>
+              <tbody> <!--Cuerpo de la tabla-->
+
+                <tr>
+                    <td> $15.00 MXN </td><!--table data: celdas con datos de la tabla-->
+                    <td rowspan="3"> $18.00 MXN </td> <!--Rowspan nos permite fusionar celdas en fila, en este caso, esta celda se extiende 3 filas hacia abajo -->
+                    <td> $18.00 MXN </td>
+                    <td> $28.00 MXN </td>
+                    <td> $13.00 MXN </td>
+                    <td> $18.00 MXN </td>
+                    <td> $33.00 MXN </td>
+                    
+                </tr>
+                <tr>
+                    <td> $20.00 MXN </td>
+                    <td> $15.00 MXN </td>
+                    <td> $30.00 MXN </td>
+                    <td> $30.00 MXN </td>
+                    <td> $30.00 MXN </td>
+                    <td> $30.00 MXN</td>
+                    <td> $30.00 MXN</td>
+                </tr>
+                <tr>
+                    <td> Más cosas</td>
+                    <td> Más cosas </td>
+                    <td> Más información</td>
+                    <td> Más info </td>
+                    <td> Otros datos </td>
+                    <td> Más datos </td>
+                    <td> Datos </td>
+                </tr>
+              </tbody>
+            </table> <!-- Fin de la tabla-->
+        </div>
+        <br>
+        <div >
+            <p> Todos los días de la semana contamos con increíbles promociones</p>
+            <table class="tabla-dos"> <!--Creamos otra tabla, pero con un atributo de clase, para poder darle estilos diferentes a la tabla anterior-->
+                <thead>
+                    <tr>
+                        <th colspan="5"> Promociones de la semana</th> <!--Colspan nos permite "fusionar" celdas consecutivas, en este caso, extiende una celda 5 columnas más allá-->
+                        <th colspan="2"> Promos fin de semana</th> <!--Por ejemplo, colspan="2" extiende una celda dos columnas más allá.-->
+                    </tr>
+                    <tr>
+                        
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                        <th>Domingo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <td>Atole chico y tamal verde</td>
+                        <td>Torta de tamal oaxaqueño de mole</td>
+                        <td> Litro de atole </td>
+                        <td> 2x1 en tamales dulces </td>
+                        <td> Tamales de zarzamora </td>
+                        <td> Tamales especiales con una pieza de pollo </td>
+                        <td> Tamales especiales veganos </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td> $24.00 </td>
+                        <td> $15.00 </td>
+                        <td colspan="2"> $20.00 </td> <!--Este ejemplo hace que la celda abarque las columnas correspondientes a Miércoles y Jueves, así como "Litro de atole  y 2x1 en tamales dulces"-->
+                        <td> $12.00 </td>
+                        <td> $20.00 </td>
+                        <td> $10.00 </td>
+                        <td> $14.00 </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
   </body>
 </html>
