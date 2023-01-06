@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    color: blueviolet;
+    font-style: italic;
+}
+
+form{
+    /*Para centrar el formulario*/
+    margin: 0 auto;
+    width: 700px;
+    padding: 1em;
+    border: 1px solid blueviolet;
+    border-radius: 1em;
+    text-align: center;
+}
+
+fieldset{
+    padding: 1em;
+    border-radius: 10px;
+    border-color: blueviolet;
+}
+
+legend{
+    color:purple;
+    text-align: center;
+    margin: auto;
+}
+
+button{
+    background-color: lightpink;
+    border-radius: 0.5em;
+}

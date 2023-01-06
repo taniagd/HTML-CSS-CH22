@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/tamalito.png" />
+    <link href="assets/css/contacto.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+   <header>
+    <h1>Contáctanos</h1>
+   </header>
+
+   <main>
+    <section>
+        <form action="" method="post"> <!--Son dos atributos principales. En action colocamos la url a donde se mandará la información. Con method indicamos el tipo de metodo http, se utilizan dos: get y post. Con get los datos se incluyen en la url y con post se incluyen en el cuerpo de form y se envían a un servidor-->
+            <fieldset> <!--Permite agrupar por campos-->
+                <legend> Datos básicos de contacto </legend>
+
+                <label for="name"> Nombre: </label> <!--Valor de for deber ser igual a id del input correspondiente-->
+                <input id="name" type="text" placeholder="Nancy" required> <!--Atributo required hace que el campo sea obligatorio-->
+                <br>
+                <br>
+                <label for="last-name"> Apellido: </label>
+                <input id="last-name" type="text" placeholder="Moreno" required>
+                <br>
+                <br>
+                <label for="email"> Correo electrónico: </label>
+                <input id="email" type="mail" placeholder="tucorreo@correo.com" autocomplete="email"> <!--Atributo autocomplete indica al navegador que si el usaurio ya ha colocado este dato antes, lo sugiera para rellenar el campo-->
+
+            </fieldset>
+                
+
+            <fieldset>
+                <legend> Datos del pedido </legend>
+
+                <label for="number-of-tamales"> ¿Cuántos tamales requiere? </label>
+                <input id="number-of-tamales" type="number" min="20" max="500" required> <!--Indicamos los valores mínimos y máximos requeridos-->
+                <br>
+                <br>
+                <label for="atole"> ¿Cuántos litros de atole requiere? <input id="atole" type="number" min="2" max="50"> </label>
+                <br>
+                <br>
+
+                <label for="date"> Fecha del evento: <input id="date" type="date"></label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend> Datos del envío </legend>
+                <!--Primera forma de hacer una lista de opciones.
+                Esta forma hace que el usaurio de scroll hasta encontrar la opción deseada-->
+                <select name="stores" id="stores">
+                    <option value="Sucursal Azcapotzalco"> Sucursal Azcapotzalco</option>
+                    <option value="Sucursal Acuitlapilco"> Sucursal Acuitlapilco</option>
+                    <option value="Sucursal Ciudad Alegre"> Sucursal Ciudad Alegre</option>
+                    <option value="Envío a domicilio"> Envío a domicilio</option>
+                </select>
+
+                <!--Esta segunda opción, le da oportunidad al usuario de buscar una opción con las primeras letras, en lugar de hacer scroll infinito hasta encontrar la opción requerida-->
+                <input list="storestwo">
+                <datalist id="storestwo">
+                    <option value="Sucursal Azcapotzalco"> Sucursal Azcapotzalco</option>
+                    <option value="Sucursal Acuitlapilco"> Sucursal Acuitlapilco</option>
+                    <option value="Sucursal Ciudad Alegre"> Sucursal Ciudad Alegre</option>
+                    <option value="Envío a domicilio"> Envío a domicilio</option>
+                </datalist>
+                <br>
+                <br>
+                <!--Inputs de tipo radio. Es necesario agruparlos a través del atributo name para que al momento de seleccionar, solo nos permita elegir uno de ellos-->
+                <input id="delivery" type="radio" name="type-of-delivery">Recoger en sucursal
+                <input id="order" type="radio" name="type-of-delivery"> Envío a domicilio 
+                <br>
+                <br>
+                <!--Input de tipo casilla de verificación-->
+                <label for="verified"><input id="verified" type="checkbox">He leído y acepto los términos y condiciones </label>
+                <br>
+                <br>
+
+                <!--<input type="submit"> <!--Este tipo de input se renderiza como un botón-->
+
+                <br>
+                <br>
+                <!--Otra manera de crear el botón de enviar-->
+                <button type="submit" > ¡Enviar ya!</button>
+
+            </fieldset>
+        </form>
+
+    </section>
+   </main>
+
+</body>
+</html>
